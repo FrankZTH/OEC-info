@@ -11,7 +11,7 @@ body{
 header{
   background-image: url(img/header_ocean.png);
   background-repeat: repeat-x;
-  background-attachment: fixed;
+  background-size: cover;
 }
 .wrapper {
     /*版面寬度1280px*/
@@ -182,6 +182,7 @@ ul.header_label ul li:hover>ul {
 #edit_time p,#editer p{
   margin-left: 20px;
   margin-top: -1px;
+  margin-bottom: 10px;
 }
 #content img{
   margin: 10px 0px 10px 0px;
@@ -235,6 +236,7 @@ ul.header_label ul li:hover>ul {
 }
 
 .search>h1,.picture>h1{
+  font-family: 'Microsoft JhengHei';
   font-size: 24px;
   margin-bottom: 20px;
 }
@@ -249,7 +251,10 @@ ul.header_label ul li:hover>ul {
 /*--------------------------------------------搜尋部分*/
 .search_part{
   margin-top:10px;
+  width: 100% !important;
 }
+
+
 /*-------------------------------------------搜尋部分*/
 /*-------------------------------------------圖片導覽*/
 .jssorb13 {
@@ -297,10 +302,11 @@ footer{
 }
 
 footer p{
-  line-height: 20px;
+  line-height: 60px;
   position: relative;
   text-align: center;
-  top: 0px;;
+  top: 0px;
+  font-size: 20px;
 }
 /*----------------------------------------------------------footer*/
 /*----------------------------------------------------------content*/
@@ -309,6 +315,7 @@ footer p{
   header{
     background-image: none;
     background-image: url('img/header_ocean_768.png');
+    background-size: cover;
   }
   .wrapper {
       /*版面寬度768px*/
