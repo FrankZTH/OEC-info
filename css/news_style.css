@@ -11,6 +11,7 @@ body{
 header{
   background-image: url(img/header_ocean.png);
   background-repeat: repeat-x;
+  background-attachment: fixed;
 }
 .wrapper {
     /*版面寬度1280px*/
