@@ -2,6 +2,9 @@ ul li
 {
     list-style-type: none;/*去點*/
 }
+html{
+  overflow-x: hidden;
+}
 body{
   padding:0px;
   margin:0px;
@@ -309,8 +312,8 @@ footer p{
   line-height: 60px;
   position: relative;
   text-align: center;
-  top: -12px;
-  font-size: 16px;
+  top: 0px;
+  font-size: 18px;
 }
 /*----------------------------------------------------------footer*/
 /*----------------------------------------------------------content*/
