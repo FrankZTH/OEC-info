@@ -257,7 +257,6 @@ ul.header_label ul li:hover>ul {
   width: 100% !important;
 }
 
-
 /*-------------------------------------------搜尋部分*/
 /*-------------------------------------------圖片導覽*/
 .jssorb13 {
@@ -277,8 +276,10 @@ ul.header_label ul li:hover>ul {
 .jssorb13 .av { background-position: -65px -5px; }
 .jssorb13 .dn, .jssorb13 .dn:hover { background-position: -95px -5px; }
 .pic_img img{
-  margin-top: 10px;
   width: 100% !important;
+}
+.picture{
+  margin-top: -70px;
 }
 /*-------------------------------------------圖片導覽*/
 /*-------------------------------------------捐款*/
@@ -308,8 +309,8 @@ footer p{
   line-height: 60px;
   position: relative;
   text-align: center;
-  top: 0px;
-  font-size: 20px;
+  top: -12px;
+  font-size: 16px;
 }
 /*----------------------------------------------------------footer*/
 /*----------------------------------------------------------content*/
