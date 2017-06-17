@@ -8,6 +8,9 @@ body{
   background-color:#eee;
   font-family:'Open Sans',sans-serif,arial,helvetica,verdana;
 }
+.container{
+  width: 1280px;
+}
 header{
   background-image: url(img/header_ocean.png);
   background-repeat: repeat-x;
