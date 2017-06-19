@@ -1,0 +1,108 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!--theme-->
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <!--css-->
+    <link rel="stylesheet" href="css/signIn.css">
+
+    <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyBG4lMM7Vn-gZmdYBgY1jcfMpn5U_mer5U",
+            authDomain: "finalweb-db0d7.firebaseapp.com",
+            databaseURL: "https://finalweb-db0d7.firebaseio.com",
+            projectId: "finalweb-db0d7",
+            storageBucket: "finalweb-db0d7.appspot.com",
+            messagingSenderId: "226722182704"
+        };
+        firebase.initializeApp(config);
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="header_logo">
+                <a href="index.html">
+                    <img src="img/logo.png" class="logo">
+                </a>
+            </div>
+            <nav>
+                <ul class="header_label">
+                    <li>
+                        <a href="#">
+                            <p>動物保育</p>
+                        </a>
+                        <ul>
+                            <li><a href="#">臭海豚</a>
+                            </li>
+                            <li><a href="#">臭大象</a>
+                            </li>
+                            <li><a href="#">臭臭雞</a>
+                            </li>
+                            <li><a href="#">香香雞腿</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>新聞香香</p>
+                        </a>
+                        <ul>
+                            <li><a href="#">新聞香香</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>汙染色劑</p>
+                        </a>
+                        <ul>
+                            <li><a href="#">臭汙染</a>
+                            </li>
+                            <li><a href="#">香汙染S</a>
+                            </li>
+                            <li><a href="#">性汙染</a>
+                            </li>
+                            <li><a href="#">嗚嗚好懶</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>關於我們</p>
+                        </a>
+                        <ul>
+                            <li><a href="#">贊助我們</a>
+                            </li>
+                            <li><a href="#">關於我們</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section>
+
+        <div class="window">
+          <div class="img_content_1">
+              <img src="img/LifeIsGood.jpg" class="LifeIsGood">
+              <p>感謝您的填寫</p>
+          </div>
+        </div>
+    </section>
+    <footer>
+    </footer>
+    <script src="./js/donate.js"> </script>
+</body>
+
+</html>

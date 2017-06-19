@@ -1,131 +1,169 @@
-<!DOCTYPE html>
 <html>
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--bootstrap-->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <!--theme-->
+  <link rel="stylesheet" href="css/bootstrap-theme.css">
+  <!--css-->
+  <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/news_style.css">
-  <link rel="stylesheet" href="css/right_style.css">
 </head>
 
 <body>
   <header>
     <div class="wrapper">
-      <div class="header_logo">
-        <a href="#">
-          <img src="img/style_img/logo.png" class="logo">
-        </a>
-      </div>
-      <nav>
-        <ul class="header_label">
-          <li><a href="#">動物保育</a>
-            <ul>
-              <li><a href="#">臭海豚</a>
+      <nav class="nav navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+            <a class="navbar-brand" href="index.html"><img src="img/logo.png" class="logo"></a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">動物保育<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">臭海豚</a></li>
+                  <li><a href="#">臭大象</a></li>
+                  <li><a href="#">臭臭雞</a></li>
+                  <li><a href="#">香香雞腿</a></li>
+                </ul>
               </li>
-              <li><a href="#">臭大象</a>
+              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">新聞香香<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">新聞香香</a></li>
+                </ul>
               </li>
-              <li><a href="#">臭臭雞</a>
+              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">汙染色劑<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">臭汙染</a></li>
+                  <li><a href="#">香汙染S</a></li>
+                  <li><a href="#">性汙染</a></li>
+                  <li><a href="#">嗚嗚好懶</a></li>
+                </ul>
               </li>
-              <li><a href="#">繼光香香雞</a>
+              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">關於我們<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="donate.html">贊助我們</a></li>
+                  <li><a href="#">關於我們</a></li>
+                </ul>
               </li>
             </ul>
-          </li>
-          <li><a href="#">新聞</a>
-            <ul>
-              <li><a href="news_inside_example.html">新聞</a>
-              </li>
-            </ul>
-          </li>
-          <li><a href="#">汙染</a>
-            <ul>
-              <li><a href="#">臭汙染</a>
-              </li>
-              <li><a href="#">香汙染</a>
-              </li>
-              <li><a href="#">性汙染</a>
-              </li>
-              <li><a href="#">嗚嗚我好懶</a>
-              </li>
-            </ul>
-          </li>
-          <li><a href="#">關於我們</a>
-            <ul>
-              <li><a href="#">關於我們</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
+          </div>
+        </div>
       </nav>
     </div>
   </header>
 
-  <content>
-    <div class="body_left">
-
-
+  <div class="container">
+    <div class="col-sm-12 col-xs-12 hidden-xs">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- 轮播（Carousel）指标 -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+        <!-- 轮播（Carousel）项目 -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="img/ocean1.jpg" alt="First slide">
+          </div>
+          <div class="item">
+            <img src="img/ocean2.jpg" alt="Second slide">
+          </div>
+          <div class="item">
+            <img src="img/ocean3.jpg" alt="Third slide">
+          </div>
+          <div class="item">
+            <img src="img/ocean4.jpg" alt="Four slide">
+          </div>
+        </div>
+        <!-- 轮播（Carousel）导航 -->
+        <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+        <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+      </div>
     </div>
-    <div class="body_right">
-      <div class="search">
-        <h1>站內搜尋</h1>
-        <div id="right_body_line"></div>
-        <script>
-          (function() {
-            var cx = '003828358367870708298:xv6fqpae9u8';
-            var gcse = document.createElement('script');
-            gcse.type = 'text/javascript';
-            gcse.async = true;
-            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(gcse, s);
-          })();
-        </script>
-        <gcse:searchbox-only></gcse:searchbox-only>
-        <script>
-          (function() {
-            var cx = '003828358367870708298:xv6fqpae9u8';
-            var gcse = document.createElement('script');
-            gcse.type = 'text/javascript';
-            gcse.async = true;
-            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(gcse, s);
-          })();
-        </script>
-        <gcse:searchresults-only></gcse:searchresults-only>
+    <div class="col-lg-9">
+      <div class="col-lg-6 col-xs-12">
+        <div class="tab1">
+          <h3>海新聞</h3>
+          <p class="line"></p>
+          <img src="img/news1.jpg" class="big-img"></img>
+          <p>首場海洋"全球"高階會議 將於聯合國世界環境日登場</p>
+        </div>
+        <div class="tab">
+          <img src="img/news2.jpg" class="small-img"></img>
+          <p>海洋日談海洋的九大危機</p>
+        </div>
+        <div class="tab">
+          <img src="img/news3.jpg" class="small-img"></img>
+          <p>胡念祖：世界海洋日 國家前景在海洋</p>
+        </div>
+        <div class="tab">
+          <img src="img/news4.jpg" class="small-img"></img>
+          <p>響應世界海洋日 環團催生海洋保育署</p>
+        </div>
       </div>
-      <div class="picture">
-        <h1>照片導覽</h1>
-        <div id="right_body_line"></div>
-      </div>
-      <div class="fans">
-        <div id="fb-root"></div>
-        <script>
-          (function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s);
-            js.id = id;
-            js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.9";
-            fjs.parentNode.insertBefore(js, fjs);
-          }(document, 'script', 'facebook-jssdk'));
-        </script>
-        <div class="fb-page" data-href="https://www.facebook.com/%E6%B5%B7%E6%B4%8B%E7%92%B0%E5%A2%83%E4%BF%9D%E8%82%B2-Oec-265640070569317/" data-tabs="timeline" data-width="270" data-height="340" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false"
-          data-show-facepile="true">
-          <blockquote cite="https://www.facebook.com/%E6%B5%B7%E6%B4%8B%E7%92%B0%E5%A2%83%E4%BF%9D%E8%82%B2-Oec-265640070569317/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/%E6%B5%B7%E6%B4%8B%E7%92%B0%E5%A2%83%E4%BF%9D%E8%82%B2-Oec-265640070569317/">海洋環境保育-Oec</a></blockquote>
+      <div class="col-lg-6 col-xs-12">
+        <div class="tab1">
+          <h3>動物保育&汙染</h3>
+          <p class="line"></p>
+          <img src="img/news5.jpg" class="big-img"></img>
+          <p>白海豚保育十年回顧定調：移除5大威脅2030年拚100隻</p>
+        </div>
+        <div class="tab">
+          <img src="img/news6.jpg" class="small-img"></img>
+          <p>保育類動物新增199種 2特有種珊瑚也上榜</p>
+        </div>
+        <div class="tab">
+          <img src="img/news7.jpg" class="small-img"></img>
+          <p>15保育龜夾藏運動鞋闖關 全數送收容中心</p>
+        </div>
+        <div class="tab">
+          <img src="img/news8.jpg" class="small-img"></img>
+          <p>海豚之淚後，談漁人之淚</p>
         </div>
       </div>
     </div>
-  </content>
 
-  <section>
-
-  </section>
-
-  <footer class="footer">
-  </footer>
+    <div class="col-lg-3 col-xs-12 hidden-xs">
+      <div class="col-lg-12">
+        <h3>站內搜尋</h3>
+        <p class="line"></p>
+        <form>
+          <form class="navbar-search pull-left">
+            <input type="text" class="search-query" placeholder="Search">
+          </form>
+        </form>
+        <h3>熱門討論</h3>
+        <p class="line"></p>
+        <p>保育類動物新增199種 2特有種珊瑚也上榜</p>
+        <p>胡念祖：世界海洋日 國家前景在海洋</p>
+        <p>響應世界海洋日 環團催生海洋保育署</p>
+        <h3>粉絲專頁</h3>
+        <p class="line"></p>
+        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FStackOfTheSun%2F%3Ffref%3Dts&tabs=timeline&width=260&height=400&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="260"
+          height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+      </div>
+    </div>
   </div>
+  <footer>
+    <p>Copyright 2017 © Desing by Ocean Environmental Conservation</p>
+  </footer>
+
 </body>
 
 </html>
