@@ -4,7 +4,8 @@ ul li
 }
 .container,
 .line,
-body,h3{
+body,
+h3{
   margin: 0;
   padding: 0;
   font-family: '微軟正黑體';
@@ -23,25 +24,8 @@ body{
   /*版面居中對齊*/
   text-align: center;
 }
-.wrapper {
-  width: 100%;
-  max-width: 1280px;
-  height: auto;
-  margin: auto;
-}
-.header_logo {
-  float: left;
-  margin-left: 12px;
-}
-.header_label {
-  float: right;
-  margin-top: 32px;
-}
-.logo{
-  height: 80px;
-  width: auto;
-}
 /*----------------------------------------------------------section*/
+
 #myCarousel{
   margin: 20px 0;
 }
@@ -51,14 +35,21 @@ body{
   height: auto;
 }
 
+.carousel-indicators li{
+  width: 40px;
+  height: 5px;
+}
+
+.carousel-indicators .active{
+  width: 40px;
+  height: 5px;
+  margin-bottom: 1px;
+}
+/*----------------------------------------------輪播*/
+
 h3{
   font-weight: 800;
-  font-size: 30px;
 }
-p{
-  font-size: 25px;
-  text-align: left;
-};
 
 .container h3,p,img,form{
   text-align: left;
@@ -67,13 +58,8 @@ p{
 .tab1{
   margin-bottom: 38px;
 }
-.tab2{
-  margin-bottom: 40px;
-}
+
 .tab1 p{
-  width: 97%;
-}
-.tab2 p{
   width: 97%;
 }
 
@@ -105,11 +91,10 @@ iframe{
   width: 100%;
   margin-bottom: 30px;
 }
+@media screen and (max-width:795px){
+  h3{
+    margin-top: 10px;
+  }
+}
 
 /*----------------------------------------------------------section*/
-/*-----------------------------------------------------------------------------------max-width: 320px*/
-
-/*-----------------------------------------------------------------------------------max-width: 320px*/
-a{
-  text-decoration:none;
-}
