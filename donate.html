@@ -9,7 +9,11 @@
     <!--theme-->
     <link rel="stylesheet" href="css/bootstrap-theme.css">
     <!--css-->
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/donate.css">
+    <link rel="stylesheet" href="css/header_footer.css">
 
     <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
     <script>
@@ -27,69 +31,52 @@
 </head>
 
 <body>
-    <header>
-        <div class="wrapper">
-            <div class="header_logo">
-                <a href="index.html">
-                    <img src="img/logo.png" class="logo">
-                </a>
-            </div>
-            <nav>
-                <ul class="header_label">
-                    <li>
-                        <a href="#">
-                            <p>動物保育</p>
-                        </a>
-                        <ul>
-                            <li><a href="#">臭海豚</a>
-                            </li>
-                            <li><a href="#">臭大象</a>
-                            </li>
-                            <li><a href="#">臭臭雞</a>
-                            </li>
-                            <li><a href="#">香香雞腿</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <p>新聞香香</p>
-                        </a>
-                        <ul>
-                            <li><a href="#">新聞香香</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <p>汙染色劑</p>
-                        </a>
-                        <ul>
-                            <li><a href="#">臭汙染</a>
-                            </li>
-                            <li><a href="#">香汙染S</a>
-                            </li>
-                            <li><a href="#">性汙染</a>
-                            </li>
-                            <li><a href="#">嗚嗚好懶</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <p>關於我們</p>
-                        </a>
-                        <ul>
-                            <li><a href="#">贊助我們</a>
-                            </li>
-                            <li><a href="#">關於我們</a>
-                            </li>
-                        </ul>
-                    </li>
+  <header>
+    <div class="wrapper">
+      <nav class="nav navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+            <a class="navbar-brand" href="index.html"><img src="img/logo.png" class="logo"></a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">動物保育<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="animal1.html">長鬚鯨</a></li>
+                  <li><a href="animal2.html">座頭鯨</a></li>
+                  <li><a href="animal3.html">中華白海豚</a></li>
+                  <li><a href="animal_list.html">查看更多</a></li>
                 </ul>
-            </nav>
+              </li>
+              <li class="dropdown"><a href="news_list.html">新聞香香</a></li>
+              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">汙染色劑<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="pollution1.html">石油汙染</a></li>
+                  <li><a href="pollution2.html">有機物污染</a></li>
+                  <li><a href="pollution3.html">重金屬污染</a></li>
+                  <li><a href="pollution_list.html">查看更多</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">關於我們<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="donate.html">贊助我們</a></li>
+                  <li><a href="aboutus.html">關於我們</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
-    </header>
+      </nav>
+    </div>
+  </header>
+
 
     <section>
 
@@ -167,9 +154,6 @@
             </div>
         </div>
     </section>
-    <footer>
-        <p>Copyright 2017 © Desing by Ocean Environmental Conservation</p>
-    </footer>
     <script src="./js/donate.js">
     </script>
 </body>

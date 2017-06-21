@@ -1,0 +1,45 @@
+html{
+  overflow-x: hidden;
+}
+body{
+  padding:0px;
+  margin:auto;
+  background-color:#eee;
+  font-family: '微軟正黑體';
+}
+.container{
+  display: inline-block;
+  margin-top: 70px;
+  width: 100%;
+  height: 100%;
+  max-width: 500px;
+  margin: auto;
+}
+ul li
+{
+    list-style-type: none;/*去點*/
+}
+.wrapper {
+    /*版面寬度1280px*/
+    margin: 0 auto;
+    /*版面居中對齊*/
+    height: 100px;
+
+}
+/*----------------------------------------------------------content*/
+#yee,#han,#tin{
+
+  text-align: center;
+  margin-top: 50px;
+  margin-left: px;
+}
+#yee h2,#han h2,#tin h2,#yee h3,#han h3,#tin h3{
+  text-align: center;
+}
+#yee img,#han img,#tin img{
+  width: 100%;
+  height: 28%;
+}
+footer{
+  margin-top: 550px; 
+}

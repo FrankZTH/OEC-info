@@ -1,0 +1,54 @@
+/*------------------------------------------------右邊部分*/
+#body_right{
+  float: right;
+  margin-right: 30px;
+  margin-top: 40px;
+}
+
+.search>h1,.picture>h1{
+  font-family: 'Microsoft JhengHei';
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+/*------------------------------------------------右線*/
+#right_body_line{
+  border-top: #99dcff 2px solid;
+  margin: auto;
+  margin-bottom: 10px;
+  margin-top: -10px;
+}
+/*------------------------------------------------右線*/
+/*--------------------------------------------搜尋部分*/
+.search_part{
+  width: 100% !important;
+  margin-bottom: -60px;
+}
+
+
+/*-------------------------------------------搜尋部分*/
+/*-------------------------------------------圖片導覽*/
+.carousel-indicators .active{
+  width: 8px;
+  height: 8px;
+}
+.carousel-indicators li{
+  width: 8px;
+  height: 8px;
+  margin: 0;
+  margin-top: 15px;
+}
+
+/*-------------------------------------------圖片導覽*/
+/*-------------------------------------------捐款*/
+.donate img{
+  margin-top: 20px;
+  width: 100%;
+}
+/*-------------------------------------------捐款*/
+/*------------------------------------------粉絲專業*/
+.fans{
+  width: 100% !important;
+  margin-top: 20px;
+}
+/*------------------------------------------粉絲專業*/
+/*------------------------------------------------右邊部分*/

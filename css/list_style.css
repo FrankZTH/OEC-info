@@ -1,0 +1,55 @@
+ul li
+{
+    list-style-type: none;/*去點*/
+}
+.container,
+.line,
+body,
+h4{
+  margin: 0;
+  padding: 0;
+  font-family: '微軟正黑體';
+}
+.container{
+  width: 100%;
+  max-width: 1280px;
+  /*版面寬度1280px*/
+  margin: auto;
+  /*版面居中對齊*/
+  text-align: center;
+}
+
+h3,h4{
+  font-weight: 800;
+}
+
+.container h3,h4,p,img,form{
+  text-align: left;
+}
+
+.line{
+  border-top: #99dcff 2px solid;
+  margin-bottom: 10px;
+}
+
+.tab{
+  width: 100%;
+  display: inline-block;
+  margin-bottom: 40px;
+}
+
+.tab img{
+  width: 50%;
+  height: auto;
+  float: left;
+  margin-right: 5px;
+
+}
+
+.tab h4{
+  margin-bottom: 10px;
+}
+
+.tab p{
+  font-size: 15px;
+}

@@ -8,16 +8,13 @@ body{
   font-family:'Open Sans',sans-serif,arial,helvetica,verdana;
 }
 .container{
-  width: 1280px;
+  width: 100%;
+  max-width: 1280px;
+  margin: auto;
 }
 ul li
 {
     list-style-type: none;/*去點*/
-}
-header{
-  background-image: url(img/header_ocean.png);
-  background-repeat: repeat-x;
-  background-size: cover;
 }
 .wrapper {
     /*版面寬度1280px*/
@@ -26,131 +23,6 @@ header{
     height: 100px;
 
 }
-.header_logo {
-    float: left;
-    margin-left: 80px;
-}
-.header_label {
-    float: right;
-}
-
-
-/*----------------------------------------------下拉式選單*/
-
-ul {
-    /* 取消ul預設的內縮及樣式 */
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-ul.header_label {
-    /*border: #ccc 1px solid;框框格子*/
-    display: inline-block;
-    font-family: 'Open Sans', Arial, sans-serif;
-    font-family: 'Microsoft JhengHei';
-    font-size: 13px;
-    margin-top: 30px;
-}
-
-ul.header_label li {
-    position: relative;
-    white-space: nowrap;
-    border-right: #ccc 1px solid;
-}
-
-ul.header_label>li:last-child {
-    border-right: none;
-}
-
-ul.header_label>li {
-    float: left;
-    /* 只有第一層是靠左對齊*/
-}
-
-ul.header_label a {
-    /*background-color: #CCEEFF;*/
-    color: #333;
-    display: block;
-    padding: 0 42px;
-    text-decoration: none;
-    line-height: 40px;
-}
-
-ul.header_label a:hover {
-    /* 滑鼠滑入按鈕變色*/
-    background-color: #ef5c28;
-    color: #fff;
-}
-
-ul.header_label li:hover>a {
-    /* 滑鼠移入次選單上層按鈕保持變色*/
-    background-color: RGB(146,168,209);
-    color: #fff;
-}
-
-ul.header_label ul {
-    border: #ccc 1px solid;
-    position: absolute;
-    z-index: 99;
-    left: -1px;
-    top: 100%;
-    min-width: 100%;
-}
-
-ul.header_label ul li {
-    border-bottom: #ccc 1px solid;
-}
-
-ul.header_label ul li:last-child {
-    border-bottom: none;
-}
-
-ul.header_label ul ul {
-    /*第三層以後的選單出現位置與第二層不同*/
-    z-index: 999;
-    top: 10px;
-    left: 90%;
-}
-
-ul.header_label ul {
-    /*隱藏次選單*/
-
-    opacity: 0;
-    -webkit-transition: opacity 0.3s;
-    transition: opacity 0.3s;
-}
-
-ul.header_label li:hover>ul {
-    /* 滑鼠滑入展開次選單*/
-    opacity: 1;
-    -webkit-transition: opacity 0.3s;
-    transition: opacity 0.3s;
-    left: -1px;
-    border-right: 5px;
-}
-
-ul.header_label li:hover>ul ul {
-    /* 滑鼠滑入之後、次選單之後的選單依舊隱藏*/
-    left: 1280px;
-}
-
-ul.header_label ul li:hover>ul {
-    /* 第二層之後的選單展開位置*/
-    left: 90%;
-}
-
-.header_logo_title .header_label::after {
-    clear: both;
-    /*左邊跟右邊漂浮清掉*/
-    content: "";
-    /*讓中間全部變空白*/
-    display: block;
-    /*設成一整條*/
-}
-/*----------------------------------------------下拉式選單*/
-
-/*----------------------------------------------------------header*/
 /*----------------------------------------------------------content*/
 
 /*------------------------------------------------左邊部分*/
@@ -158,7 +30,6 @@ ul.header_label ul li:hover>ul {
   float: left;
   background-color: #fff;
   margin-top: 40px;
-  margin-left: 40px;
   display: block;
 }
 #body_left>*>h1{
@@ -175,17 +46,21 @@ ul.header_label ul li:hover>ul {
   font-family: 'Microsoft JhengHei';
   font-weight:bold;
 }
-#edit_time,#edit_time>img,#editer{
+#edit,#edit>img{
+  display: inline-block;
   float:left;
   font-size: 13px;
   color: #666666;
 }
-#edit_time,#editer{
-  width: 150px;
+#edit>img{
+  margin-bottom: -30px;
+}
+#edit{
+  width: 100%;
   display: inline-block;
   margin-left: 20px;
 }
-#edit_time p,#editer p{
+#edit p{
   margin-left: 20px;
   margin-top: -1px;
   margin-bottom: 10px;
@@ -250,40 +125,30 @@ ul.header_label ul li:hover>ul {
 #right_body_line{
   border-top: #99dcff 2px solid;
   margin: auto;
-
+  margin-bottom: 10px;
   margin-top: -10px;
 }
 /*------------------------------------------------右線*/
 /*--------------------------------------------搜尋部分*/
 .search_part{
-  margin-top:10px;
   width: 100% !important;
+  margin-bottom: -60px;
 }
+
 
 /*-------------------------------------------搜尋部分*/
 /*-------------------------------------------圖片導覽*/
-.jssorb13 {
-    position: absolute;
+.carousel-indicators .active{
+  width: 8px;
+  height: 8px;
 }
-.jssorb13 div, .jssorb13 div:hover, .jssorb13 .av {
-    position: absolute;
-    /* size of bullet elment */
-    width: 21px;
-    height: 21px;
-    background: url('img/b13.png') no-repeat;
-    overflow: hidden;
-    cursor: pointer;
+.carousel-indicators li{
+  width: 8px;
+  height: 8px;
+  margin: 0;
+  margin-top: 15px;
 }
-.jssorb13 div { background-position: -5px -5px; }
-.jssorb13 div:hover, .jssorb13 .av:hover { background-position: -35px -5px; }
-.jssorb13 .av { background-position: -65px -5px; }
-.jssorb13 .dn, .jssorb13 .dn:hover { background-position: -95px -5px; }
-.pic_img img{
-  width: 100% !important;
-}
-.picture{
-  margin-top: -70px;
-}
+
 /*-------------------------------------------圖片導覽*/
 /*-------------------------------------------捐款*/
 .donate img{
@@ -298,92 +163,5 @@ ul.header_label ul li:hover>ul {
 }
 /*------------------------------------------粉絲專業*/
 /*------------------------------------------------右邊部分*/
-/*----------------------------------------------------------footer*/
-footer{
-  background-image: url('img/header_ocean.png');
-  background-repeat: repeat-x;
-  height: 60px;
-  margin-top: 40px;
-  display: inline-block;
-  width: 100%;
-}
 
-footer p{
-  line-height: 60px;
-  position: relative;
-  text-align: center;
-  top: 0px;
-  font-size: 18px;
-}
-/*----------------------------------------------------------footer*/
 /*----------------------------------------------------------content*/
-/*-----------------------------------------------------------------------------------max-width: 1060px*/
-@media (max-width: 1060px){
-  header{
-    background-image: none;
-    background-image: url('img/header_ocean_768.png');
-    background-size: cover;
-  }
-  .wrapper {
-      /*版面寬度768px*/
-      background-image: none;
-      height: 180px;
-  }
-
-  .header_logo {
-      margin-left: 10px;
-      margin-top: 10px;
-  }
-  .logo{
-    width: 400px;
-  }
-  ul.header_label {
-      width: 100%;
-      margin-top: 10px;
-  }
-  ul.header_label>li {
-      width: 24%;
-      display: inline-block;
-  }
-  ul.header_label a {
-      padding: 0;
-  }
-}
-/*-----------------------------------------------------------------------------------max-width: 1060px*/
-/*-----------------------------------------------------------------------------------max-width: 768px*/
-@media (max-width: 768px){
-  header{
-    background-image: none;
-    background-image: url('img/header_ocean_768.png');
-  }
-  .wrapper {
-      /*版面寬度768px*/
-      background-image: none;
-      height: 180px;
-  }
-
-  .header_logo {
-      margin-left: 10px;
-      margin-top: 10px;
-  }
-  .logo{
-    width: 400px;
-  }
-  ul.header_label {
-      width: 100%;
-      margin-top: 10px;
-  }
-  ul.header_label>li {
-      width: 24%;
-      display: inline-block;
-  }
-  ul.header_label a {
-      padding: 0;
-  }
-}
-/*-----------------------------------------------------------------------------------max-width: 768px*/
-/*-----------------------------------------------------------------------------------max-width: 320px*/
-@media (max-width: 320px){
-
-}
-/*-----------------------------------------------------------------------------------max-width: 320px*/
