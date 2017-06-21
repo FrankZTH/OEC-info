@@ -101,45 +101,7 @@ footer p{
   top: 18px;
 }
 /*----------------------------------------------------------footer*/
-@media (max-width: 866px){
-  .wrapper nav{
-    display: none;
-  }
-  .logo{
-    float: left;
-  }
-}
-@media (max-width: 768px){
-  header{
-    margin-bottom: 20px;
-  }
-}
-@media (max-width: 400px){
-  .wrapper nav{
-    display: none;
-  }
-  .wrapper{
-    width: 100%;
-    text-align: center;
-  }
-  .logo{
-    width: 85%;
-    height:auto;
-    float: left;
-  }
-}
-/*-----------------------------------------------------------------------------------max-width: 320px*/
-@media (max-width: 320px){
 
-  .abgne-frame{
-    display: none;
-  }
-
-  footer{
-    height: 50px;
-    font-size: 8px;
-  }
-}
 /*-----------------------------------------------------------------------------------max-width: 320px*/
 a{
   text-decoration:none;
