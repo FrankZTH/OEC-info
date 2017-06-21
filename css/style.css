@@ -56,18 +56,21 @@ h3{
 }
 
 .tab1{
-  margin-bottom: 38px;
+  margin-bottom: 50px;
 }
 
 .tab1 p{
   width: 97%;
+
 }
 
 .line{
   border-top: #99dcff 2px solid;
   margin-bottom: 10px;
 }
-
+.tab p,.tab1 p{
+  font-size: 25px;
+}
 .tab{
   width: 100%;
   display: inline-block;

@@ -1,6 +1,7 @@
 header{
   background-image: url("img/header_ocean.png");
   background-size: cover;
+  font-family: '微軟正黑體';
 }
 .wrapper {
   width: 100%;
@@ -41,43 +42,21 @@ header{
 .dropdown-menu{
   min-width: 104px;
 }
-.nav .open > a, .nav .open > a:hover, .nav .open > a:focus{
-  background-color: #2bd2f2 !important;
-  color: #fff;
-}
+
 .navbar-nav .open .dropdown-menu{
-  background-color: #2bd2f2 !important;
+  background-color: #2bd2f2;
   color: #fff;
 }
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus{
   color: #000;
-  background-color: #2bd2f2 !important;
+  background-color: #2bd2f2;
 }
 .dropdown-menu > li > a{
   padding: 10px 20px;
   color: #000;
 }
-.dropdown-toggle .open{
-  background-color: #2bd2f2 !important;
-}
-
-/*----------------------------------------------下拉式選單*/
-/*----------------------------------------------------------footer*/
-footer{
-  background-image: url(img/header_ocean.png);
-  background-repeat: repeat-x;
-  height: 60px;
-}
-
-footer p{
-  position: relative;
-
-  text-align: center;
-  top: 18px;
-}
-/*----------------------------------------------------------footer*/
-a{
-  text-decoration:none;
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .active > a{
+  background: #2bd2f2;
 }
 @media screen and (max-width:768px){
   .nav.navbar-nav.navbar-right{
@@ -86,8 +65,11 @@ a{
   .navbar-default .navbar-nav .open .dropdown-menu > li > a{
     color: #000;
   }
+  footer p{
+    top:15px;
+  }
 }
-@media screen and (max-width:450px){
+@media screen and (max-width:410px){
   a.navbar-brand{
     width: 80%;
     padding: 0;
@@ -102,8 +84,21 @@ a{
     margin-top: 3vh;
     margin-right: 2vh;
   }
-  footer p{
-    font-size: 8px;
-    top: 10px;
-  }
+}
+/*----------------------------------------------下拉式選單*/
+/*----------------------------------------------------------footer*/
+footer{
+  background-image: url(img/header_ocean.png);
+  background-repeat: repeat-x;
+  height: 60px;
+}
+
+footer p{
+  position: relative;
+  text-align: center;
+  top: 17px;
+}
+/*----------------------------------------------------------footer*/
+a{
+  text-decoration:none;
 }
